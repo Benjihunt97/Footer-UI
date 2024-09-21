@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="main.css">
+  <title>Footer UI</title>
+</head>
+
+<body class="sm:grid sm:place-items-center sm:min-h-screen bg-blue-50 overflow-x-hidden transition-all duration-300">
+  
+  <button id="toggle-theme" class="size-14 rounded-md shadow-md grid place-items-center *:col-span-full *:row-span-full *:transition-all *:duration-300 border border-slate-500 fixed top-5 right-5 bg-slate-700 z-50 text-white overflow-hidden">
+    <span class="grid place-items-center dark-icon"><i class="material-symbols-outlined">dark_mode</i></span>
+    <span class="grid place-items-center light-icon -translate-y-[200%]"><i class="material-symbols-outlined">light_mode</i></span>
+  </button>
+  
+  <footer class="grid sm:grid-cols-2 md:grid-cols-4 sm:gap-4 sm:p-7 gap-10 w-full max-w-[800px] bg-white p-5 text-slate-800 sm:rounded-lg sm:shadow-lg">
+    <div>
+      <h3 class="font-bold text-lg">Gallery</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Community</li>
+        <li>Trending</li>
+        <li>Picks</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg">Marketplace</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Trending</li>
+        <li>Best Selling</li>
+        <li>Latest</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg">Magazine</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Art skills</li>
+        <li>Career</li>
+        <li>Inspiration</li>
+        <li>News</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg">Newsletter</h3>
+      <p class="text-sm mb-5">Subscribe to our newsletter to get your weekly dose of news, updates, tips and special offers.</p>
+      
+      <div class="flex items-center gap-2 border rounded-md p-2.5 mb-2">
+        <span class="grid place-items-center text-blue-600">
+          <i class="material-symbols-outlined">mail</i>
+        </span>
+        <input class="focus:outline-none bg-transparent w-full text-sm" type="email" placeholder="example@example.com">
+      </div>
+      <button class="w-full py-2.5 font-semibold !text-white rounded-md bg-gradient-to-r from-blue-400 to-indigo-600">Subscribe</button>
+    </div>
+    
+    <div class="footer-info flex items-center justify-between col-span-full text-xs text-gray-500 border-t pt-5">
+      <p>Privacy • Terms and conditions</p>
+      <p>Dribble • Behance • Instagram</p>
+    </div>
+  </footer>
+
+  <div id="ball" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[40rem] bg-gradient-to-br from-rose-500 to-amber-400 rounded-full -z-10 transition-all duration-300"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
